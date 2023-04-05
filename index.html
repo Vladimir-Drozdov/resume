@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <link rel="stylesheet" href="styleforresume.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,45 +10,71 @@
     <title>Resume</title>
 </head>
 <body>
-    <img src="../forest.png" alt="Картинка моя" width="100">
-    <h1>Владимир</h1>
-    <p>Я учусь в <strong>СПбГУ на факультете ПМ-ПУ.</strong> 
-        Люблю <em>математику</em> и <em>программирование</em></p>
-    <p>Мои хобби:</p>
-    <p>Опыт работы:</p>
-    <table>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Студент</td>
-                <td>2 курс</td>
-                <td>2021/2023</td>
-            </tr>
-        </tbody>
-    </table>
-    <ul>
-        <li>Программирование</li>
-        <li>Математика</li>
-        <li>Шахматы</li>
+<div class="container">
         
-    </ul>
-    <p>Список социальных сетей:</p>
-    <p> <a href="#" target="_blank">Вконтакте</a> </p>
-    <div>Связаться со мной:</div>
-    <label for="name">Ваше имя</label> 
-    <input type="text" id="name" placeholder="Ваше имя"> <br>
-    <label for="email">Ваше имя</label> 
-    <input type="email" id="email" placeholder="Ваш имейл"><br>
-    <label for="text">Ваше сообщение</label> <br>
-    <textarea name="" id="text" cols="30" rows="10" placeholder="Ваше сообщение"></textarea><br>
-    <button type="submit">Отправить</button>
-
+        <img class="img" src="../forest.png" alt="Картинка моя">
+        <div class="basicinfo">
+            <h1>Владимир</h1>
+            <div class="info">
+            <p>Я учусь в <strong>СПбГУ на факультете ПМ-ПУ.</strong> 
+                Люблю <em>математику</em> и <em>программирование</em></p>
+            </div>
+            <div class="socialnet">
+                <p>Список социальных сетей:</p>
+                <p> <a href="#" target="_blank">Вконтакте</a> </p>
+            </div>
+        </div>
+        
+        
+    <div class="card">
+        <p>Опыт работы:</p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Название</th>
+                    <th>Должность</th>
+                    <th>Год</th>
+                </tr>
+                
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Студент</td>
+                    <td>2 курс</td>
+                    <td>2021/2023</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="card">
+        <p class="hobbie">Мои хобби:</p>
+        <ul class="listhobbie">
+            <li>Программирование</li>
+            <li>Математика</li>
+            <li>Шахматы</li>
+            
+        </ul>
+    </div>
+        
+        <div class="card form">
+        <h2 class="connection">Связаться со мной:</h2>
+        <form>
+            <div class="name">
+            <label for="name">Ваше имя</label> <br>
+            <input type="text" id="name" placeholder="Ваше имя"> <br>
+            </div>
+            <div class="email">
+            <label for="email">Ваше имя</label>  <br>
+            <input type="email" id="email" placeholder="Ваш имейл"><br>
+            </div>
+            <div class="textarea">
+            <label for="text">Ваше сообщение</label> <br>
+            <textarea class="textarea" name="" id="text" cols="30" rows="10" placeholder="Ваше сообщение"></textarea><br>
+            </div>
+            <button class="btn" type="submit">Отправить</button>
+        </form>
+    </div>
+</div>
     
 </body>
 </html>

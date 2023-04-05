@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Miao&display=swap');
+*{
+    
+    /* text-align: center; */
+}
+body{
+    font-style: normal;
+    font-family: 'Noto Sans Miao', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+th, td,tr, table{
+    border:1px solid black;
+    border-collapse: collapse;
+    padding: 0;
+    margin: 0;
+}
+body{
+    color:#0f141e;
+    background:#f1f1f1;
+}
+.card{
+    border: 1px solid #d8f6dc;
+    border-radius: 5px;
+    background-color: #d8f6dc;
+    margin-top: 5px;
+    padding: 15px 20px;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.textarea{
+    margin-top: 5px;
+}
+.img{
+    box-shadow: 11px 9px 14px 6px rgba(0, 0, 0, 0.25);
+    min-width: 25%;
+    height: 230px;
+    border-radius:28%;
+}
+h1{
+    margin: 5px 0px;
+}
+a:hover{
+    color:red;
+    cursor:pointer;
+}
+a:visited{
+    color:red;
+    
+}
+a:active{
+    color:blue;
+    cursor:pointer;
+}
+.btn:hover{
+    font-size: 30px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 4px 4px #333;
+    width: 200px;
+}
+.listhobbie li:nth-child(odd):hover{
+    color:#444;
+    text-decoration: underline;
+    list-style:none;
+}
+.table th:first-child:hover{
+    background-color: #c31b1b;
+}
+
+.name, .email, .textarea{
+    display: inline-block;
+    width: 49%;
+    box-sizing: border-box;
+    /* border:1px solid red; */
+    margin: 0;
+
+}
+form, .form{
+    border:1px solid black;
+    margin: 0;
+    padding: 0;
+}
+.connection{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.btn{
+    display: block;
+    background-color: black;
+    width: 140px;
+    padding: 30px;
+    color:white;
+}
+.img, .basicinfo{
+display: inline-block;
+width: 46%;
+
+ /* border:1px solid black;  */
+}
+.img{
+     margin-right: 3%; 
+}
+.basicinfo{
+    margin-left: 3%;
+}
+h1{
+    
+}
+.info{
+
+}
+.socialnet{
+
+}
+@media(max-width:650px){
+    .img, .basicinfo{
+        display: block;
+        /* width: 100%; */
+        width: 280px;
+    }
+    .name, .email, .textarea{
+        display: block;
+        /* border:1px solid red; */
+        margin: 0;
+        width: 100%;
+    }
+}
